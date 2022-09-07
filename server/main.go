@@ -1,9 +1,9 @@
 package main
 
 import (
-	"fmt"
+	"github.com/sota0121/micro-cms-go/server/mcmslib"
 )
 
 func main() {
-	fmt.Println("Hello, World!")
+	mcmslib.Main()
 }
