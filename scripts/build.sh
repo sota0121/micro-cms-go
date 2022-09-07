@@ -1,4 +1,4 @@
 #! /bin/bash
 
 APP_NAME="mcms"
-go build -o "bin/$APP_NAME" server/main.go
+go build -o "bin/$APP_NAME" server.go
