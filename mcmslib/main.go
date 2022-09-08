@@ -5,6 +5,8 @@ import (
 	"os"
 
 	"github.com/labstack/echo"
+
+	"github.com/sota0121/micro-cms-go/db"
 )
 
 func Main() {
@@ -17,6 +19,12 @@ func Main() {
 	}
 
 	fmt.Println("Start micro-cms-go server on " + port)
+
+	// --------------------------------
+	// Create DB connection
+	// --------------------------------
+	db := db.NewDB()
+	defer db.Close()
 
 	// --------------------------------
 	// API server routing
